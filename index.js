@@ -33,6 +33,11 @@ async function run() {
             res.send(result)
 
         })
+        app.get('/instructors', async (req, res) => {
+            const result = await instructorsCollection.find().toArray();
+            res.send(result)
+
+        })
 
 
 
