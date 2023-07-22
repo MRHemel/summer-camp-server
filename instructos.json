@@ -1,0 +1,47 @@
+// [
+//     {
+//         "name": "John Doe",
+//         "email": "john.doe@example.com",
+//         "image": "https://i.ibb.co/f0krkw7/instructor1.jpg"
+//     },
+//     {
+//         "name": "Jane Smith",
+//         "email": "jane.smith@example.com",
+//         "image": "https://i.ibb.co/VDfgWmz/instructor2.jpg"
+//     },
+//     {
+//         "name": "Michael Johnson",
+//         "email": "michael.johnson@example.com",
+//         "image": "https://i.ibb.co/WcsCmQJ/instructor3.jpg"
+//     },
+//     {
+//         "name": "Emily Williams",
+//         "email": "emily.williams@example.com",
+//         "image": "https://i.ibb.co/g4Ft7Gv/instructor4.jpg"
+//     },
+//     {
+//         "name": "David Brown",
+//         "email": "david.brown@example.com",
+//         "image": "https://i.ibb.co/3zSnGdp/instructor5.jpg"
+//     },
+//     {
+//         "name": "Sophia Lee",
+//         "email": "sophia.lee@example.com",
+//         "image": "https://i.ibb.co/0tM2R0k/instructor6.jpg"
+//     },
+//     {
+//         "name": "Daniel Miller",
+//         "email": "daniel.miller@example.com",
+//         "image": "https://i.ibb.co/6R3LfNQ/instructor7.jpg"
+//     },
+//     {
+//         "name": "Olivia Wilson",
+//         "email": "olivia.wilson@example.com",
+//         "image": "https://i.ibb.co/XJN7VZF/instructor8.jpg"
+//     },
+//     {
+//         "name": "James Taylor",
+//         "email": "james.taylor@example.com",
+//         "image": "https://i.ibb.co/c2RXW5n/instructor9.jpg"
+//     }
+// ]
