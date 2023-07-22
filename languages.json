@@ -1,65 +1,65 @@
-// [
-//   {
-//     "name": "English Course",
-//     "instructor": "John Smith",
-//     "seats": 20,
-//     "price": 150,
-//     "image": "https://i.ibb.co/1zjG88c/class1.jpg"
-//   },
-//   {
-//     "name": "Chinese Course",
-//     "instructor": "Maria Garcia",
-//     "seats": 15,
-//     "price": 120,
-//     "image": "https://i.ibb.co/TrQ5m5t/class2.jpg"
-//   },
-//   {
-//     // "name": "Bangla Course",
-//     "instructor": "Pierre Dubois",
-//     "seats": 10,
-//     "price": 180,
-//     "image": "https://i.ibb.co/G5fSjJy/class3.jpg"
-//   },
-//   {
-//     "name": "Italiano Course",
-//     "instructor": "Anna Müller",
-//     "seats": 12,
-//     "price": 160,
-//     "image": "https://i.ibb.co/hmmVv6f/class4.jpg"
-//   },
-//   {
-//     "name": "Korean Course",
-//     "instructor": "Li Wei",
-//     "seats": 18,
-//     "price": 140,
-//     "image": "https://i.ibb.co/dtY5YCs/class5.jpg"
-//   },
-//   {
-//     "name": "Arabic Course",
-//     "instructor": "Takeshi Nakamura",
-//     "seats": 14,
-//     "price": 170,
-//     "image": "https://i.ibb.co/VDvyM7Z/class6.png"
-//   },
-//   {
-//     "name": "Italian Course",
-//     "instructor": "Giulia Rossi",
-//     "seats": 0,
-//     "price": 190,
-//     "image": "https://example.com/images/italian_course.jpg"
-//   },
-//   {
-//     "name": "Spanish Course",
-//     "instructor": "Ahmed Khalid",
-//     "seats": 16,
-//     "price": 130,
-//     "image": "https://example.com/images/arabic_course.jpg"
-//   },
-//   {
-//     "name": "Russian Course",
-//     "instructor": "Olga Ivanova",
-//     "seats": 0,
-//     "price": 150,
-//     "image": "https://example.com/images/russian_course.jpg"
-//   }
-// ]
+[
+  {
+    "name": "English Course",
+    "instructor": "John Smith",
+    "seats": 20,
+    "price": 150,
+    "image": "https://i.ibb.co/1zjG88c/class1.jpg"
+  },
+  {
+    "name": "Chinese Course",
+    "instructor": "Maria Garcia",
+    "seats": 15,
+    "price": 120,
+    "image": "https://i.ibb.co/TrQ5m5t/class2.jpg"
+  },
+  {
+    "name": "Bangla Course",
+    "instructor": "Pierre Dubois",
+    "seats": 10,
+    "price": 180,
+    "image": "https://i.ibb.co/G5fSjJy/class3.jpg"
+  },
+  {
+    "name": "Italiano Course",
+    "instructor": "Anna Müller",
+    "seats": 12,
+    "price": 160,
+    "image": "https://i.ibb.co/hmmVv6f/class4.jpg"
+  },
+  {
+    "name": "Korean Course",
+    "instructor": "Li Wei",
+    "seats": 18,
+    "price": 140,
+    "image": "https://i.ibb.co/dtY5YCs/class5.jpg"
+  },
+  {
+    "name": "Arabic Course",
+    "instructor": "Takeshi Nakamura",
+    "seats": 14,
+    "price": 170,
+    "image": "https://i.ibb.co/VDvyM7Z/class6.png"
+  },
+  {
+    "name": "Italian Course",
+    "instructor": "Giulia Rossi",
+    "seats": 0,
+    "price": 190,
+    "image": "https://example.com/images/italian_course.jpg"
+  },
+  {
+    "name": "Spanish Course",
+    "instructor": "Ahmed Khalid",
+    "seats": 16,
+    "price": 130,
+    "image": "https://example.com/images/arabic_course.jpg"
+  },
+  {
+    "name": "Russian Course",
+    "instructor": "Olga Ivanova",
+    "seats": 0,
+    "price": 150,
+    "image": "https://example.com/images/russian_course.jpg"
+  }
+]
