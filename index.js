@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bka0z6u.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -29,6 +29,19 @@ async function run() {
         const instructorsCollection = client.db("languageDb").collection("instructors");
         const classesCollection = client.db("languageDb").collection("courses")
         const cartsCollection = client.db("languageDb").collection("carts")
+        const studentsCollection = client.db("languageDb").collection("students")
+
+        app.post('/students', async (req, res) => {
+            const user = req.body
+            console.log(user);
+            const query = { email: user.email };
+            const existingUser = await studentsCollection.findOne(query);
+            if (existingUser) {
+                return res.send({ message: 'user already exists' })
+            }
+            const result = await studentsCollection.insertOne(user)
+            res.send(result)
+        })
 
         app.get('/instructors', async (req, res) => {
             const result = await instructorsCollection.find().toArray();
@@ -43,7 +56,7 @@ async function run() {
 
         app.post('/carts', async (req, res) => {
             const item = req.body;
-            console.log(item)
+            // console.log(item)
             const result = await cartsCollection.insertOne(item);
             res.send(result);
         })
@@ -59,7 +72,7 @@ async function run() {
         app.delete('/carts/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: new ObjectId(id) };
-            const result = await cartCollection.deleteOne(query);
+            const result = await cartsCollection.deleteOne(query);
             res.send(result);
         })
 
