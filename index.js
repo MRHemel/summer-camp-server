@@ -31,11 +31,19 @@ async function run() {
         const cartsCollection = client.db("languageDb").collection("carts")
         const studentsCollection = client.db("languageDb").collection("students")
 
+
+
+        app.get('/students', async (req, res) => {
+            const result = await studentsCollection.find().toArray()
+            res.send(result);
+        })
+
         app.post('/students', async (req, res) => {
             const user = req.body
-            console.log(user);
+            // console.log(user);
             const query = { email: user.email };
             const existingUser = await studentsCollection.findOne(query);
+            // console.log(existingUser)
             if (existingUser) {
                 return res.send({ message: 'user already exists' })
             }
