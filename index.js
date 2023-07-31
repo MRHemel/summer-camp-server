@@ -33,6 +33,13 @@ async function run() {
         const usersCollection = client.db("languageDb").collection("users")
 
 
+        app.post('/jwt', (req, res) => {
+            const user = req.body;
+            const token = jwt.sign(user, env.process.ACCESS_TOKEN_SECRET, { expiresIn: '1h' })
+
+            res.send({ token })
+        })
+
 
         app.get('/users', async (req, res) => {
             const result = await usersCollection.find().toArray()
