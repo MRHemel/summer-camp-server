@@ -56,8 +56,18 @@ async function run() {
             res.send({ token })
         })
 
+        const verifyAdmin = async (req, res, next) => {
+            const email = req.decoded.email;
+            const query = { email: email }
+            const user = await usersCollection.findOne(query)
+            if (user?.role !== 'admin') {
+                return res.status(403).send({ error: true, message: 'forbidden access' })
+            }
+            next()
+        }
 
-        app.get('/users', async (req, res) => {
+
+        app.get('/users', varifyJWT, async (req, res) => {
             const result = await usersCollection.find().toArray()
             res.send(result);
         })
@@ -75,6 +85,19 @@ async function run() {
             res.send(result)
         })
 
+        app.get('/users/admin/:email', varifyJWT, async (req, res) => {
+            const email = req.params.email;
+
+            if (req.decoded.email !== email) {
+                res.send({ admin: false })
+            }
+
+
+            const query = { email: email }
+            const user = await usersCollection.findOne(query)
+            const result = { admin: user?.roll === 'admin' }
+            res.send(result)
+        })
         app.patch('/users/admin/:id', async (req, res) => {
             const id = req.params.id;
             const filter = { _id: new ObjectId(id) }
